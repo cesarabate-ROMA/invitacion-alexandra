@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom shimmering gold effect */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #a67c3b 0%, #d4af37 35%, #fff2a3 50%, #d4af37 65%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.ocean-gradient-text {
+  background: linear-gradient(135deg, #164E5B 0%, #458D9D 50%, #206d7d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle pearl glow */
+.pearl-glow {
+  box-shadow: 0 10px 30px -5px rgba(69, 141, 157, 0.15), 0 0 20px 2px rgba(255, 255, 255, 0.8) inset;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.parchment-card {
+  background: radial-gradient(circle at 50% 50%, #fffdfa 0%, #fbf7ee 100%);
+  box-shadow: 0 20px 40px -15px rgba(22, 78, 91, 0.12), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}

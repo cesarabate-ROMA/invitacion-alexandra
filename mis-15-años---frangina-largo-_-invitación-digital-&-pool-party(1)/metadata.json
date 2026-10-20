@@ -1,0 +1,8 @@
+{
+  "name": "Mis 15 Años - Frangina Largo | Invitación Digital & Pool Party",
+  "description": "Invitación digital elegante para los 15 años de Frangina Largo. Fiesta de piscina en Peñalolén con contador regresivo, confirmación de asistencia, mapa y dress code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
